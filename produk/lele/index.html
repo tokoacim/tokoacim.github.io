@@ -12,26 +12,67 @@
     <title>Toko Acim | Ikan Lele</title>
 <style>
 a {
- color: black! important;
+  color: black! important;
+  text-decoration: none;
 }
 .container {
-  margin-top: 38px;
+  margin-top: 15px;
   margin-bottom: 50px;
+}
+.bg-transparent {
+  margin: 0;
+ background: none;
+ margin-bottom: 20px
+}
+.bi-list {
+ cursor: pointer;
+}
+.bg-black {
+ background: #000000! important;
 }
 </style>
   </head>
   
-  <body>
-    
-<div class="container">
-<a href="/"><i class="bi-arrow-left-square" style="font-size: 2rem; color: cornflowerblack;"></i></a>
-<br/><br/>
- <h1>Ikan Lele</h1>
-<br/>
+  <body>  
 
-<h4>Benefit</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu erat eget odio ornare tempus et ut mauris. Maecenas ipsum ligula, imperdiet at posuere non, pretium vitae ex. Donec leo dui, egestas a elit finibus, ornare euismod urna. Vivamus ultricies lectus sed nibh porta aliquet. Vivamus fermentum mauris aliquam risus ornare tristique. Quisque quis pretium nisi. Sed vitae tristique libero. Nullam vel urna iaculis, dictum nisl eu, dictum lorem. Etiam gravida iaculis quam a pretium. Integer pretium, lorem at vestibulum cursus, ligula nunc rutrum metus, eu congue diam libero et ex. Vestibulum sit amet ultrices tortor, aliquam convallis purus. Proin luctus dapibus risus, ac suscipit nisl. Cras eget enim tincidunt metus vulputate auctor.</p>
+<div class="collapse collapsed" id="navbarToggleExternalContent">
+  <div class="bg-light p-4">
+<ul class="list-group list-group-flush bg-dark">
+  <a href=""><li class="list-group-item">Tentang</li></a>
+  <a href=""><li class="list-group-item">Cara Belanja</li></a>
+  <a href=""><li class="list-group-item">Hubungi</li></a>
+  <a href=""><li class="list-group-item">Peta</li></a>
+</ul>
+  </div>
 </div>
+
+<div class="container">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light text-center bg-transparent">
+    <div class="container-fluid">
+      <a href="/"><i class="bi-arrow-left-square" style="font-size: 2rem; color: cornflowerblack;"></i></a>
+      <h1>Ikan Lele</h1>
+      <i class="bi-list" style="font-size: 2rem; color: cornflowerblack;" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"></i>
+    </div>
+  </nav>
+
+<div class="list-group m-3">
+
+<h4>Rp. 20.000 / Kg</h4>
+<br/>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu erat eget odio ornare tempus et ut mauris. Maecenas ipsum ligula, imperdiet at posuere non, pretium vitae ex. Donec leo dui, egestas a elit finibus, ornare euismod urna. Vivamus ultricies lectus sed nibh porta aliquet. Vivamus fermentum mauris aliquam risus ornare tristique. Quisque quis pretium nisi. Sed vitae tristique libero. Nullam vel urna iaculis, dictum nisl eu, dictum lorem. Etiam gravida iaculis quam a pretium. Integer pretium, lorem at vestibulum cursus, ligula nunc rutrum metus, eu congue diam libero et ex. Vestibulum sit amet ultrices tortor, aliquam convallis purus. Proin luctus dapibus risus, ac suscipit nisl. Cras eget enim tincidunt metus vulputate auctor.</p>
+
+
+</div>
+
+<nav class="navbar fixed-bottom navbar-light bg-light">
+  <div class="container-fluid">
+  <form class="container-fluid justify-content-start text-center">
+    <button class="btn btn-sm btn-outline-secondary" type="button">Pesan Sekarang</button>
+  </form>
+  </div>
+</nav>
+
     
     <!-- Optional JavaScript; choose one of the two! -->
 
