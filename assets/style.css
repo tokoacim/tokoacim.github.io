@@ -1,0 +1,19 @@
+a {
+  color: black! important;
+  text-decoration: none;
+}
+.container {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+.bg-transparent {
+  margin: 0;
+ background: none;
+ margin-bottom: 20px
+}
+.bi-list {
+ cursor: pointer;
+}
+.bg-black {
+ background: #000000! important;
+}
