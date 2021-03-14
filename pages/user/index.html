@@ -4,39 +4,13 @@
 		<meta name="google-signin-client_id" content="337346569150-9697fifucfp7khg8bd38qplqptrp91ab.apps.googleusercontent.com">
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="../../main.js"></script>
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-    <script>
-      $(document).ready(function(){
-	$("#signout-container").hide();
-});
-function onSignIn(googleUser) {
-  var profile = googleUser.getBasicProfile();
-  $("#signout-container").show();
-  $("#signin-container").hide();
-  $("#loggedUserImage").attr("src", profile.getImageUrl());
-  $("#loggedUsername").html(profile.getName());
-  $("#loggedUserEmail").html(profile.getEmail());
-  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  console.log('Name: ' + profile.getName());
-  console.log('Image URL: ' + profile.getImageUrl());
-  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-}
-function signOut() {
-	var auth2 = gapi.auth2.getAuthInstance();
-	auth2.signOut().then(function () {
-	  console.log('User signed out.');
-	  $("#signout-container").hide();
-	  $("#signin-container").show();
-	});
-}
-    </script>
 	</head>
 	<body>
 		<center>
 			<div class="w3-container w3-teal">
-			  <h1>Google Login Example</h1>
-			  <p>An example showing how to implement google login</p>
+			  <h1>Google Login</h1>
 			</div>
 			<div class="w3-container" id="signin-container">
 				<br>
