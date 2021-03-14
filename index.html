@@ -12,8 +12,9 @@
     <title>Toko Acim</title>
 <style>
 a {
-  color: #000000! important;
-  }
+  color: black! important;
+  text-decoration: none;
+}
 .container {
   margin-top: 15px;
   margin-bottom: 50px;
@@ -29,19 +30,19 @@ a {
 .bg-black {
  background: #000000! important;
 }
-.list-group {
-  margin-right: 15px;
-  margin-left: 15px;
-}
 </style>
   </head>
   
   <body>  
 
-<div class="collapse" id="navbarToggleExternalContent">
-  <div class="bg-dark bg-black p-4">
-    <h5 class="text-white h4">Collapsed content</h5>
-    <span class="text-muted">Toggleable via the navbar brand.</span>
+<div class="collapse collapsed" id="navbarToggleExternalContent">
+  <div class="bg-light p-4">
+<ul class="list-group list-group-flush bg-dark">
+  <a href=""><li class="list-group-item">Tentang</li></a>
+  <a href=""><li class="list-group-item">Cara Belanja</li></a>
+  <a href=""><li class="list-group-item">Hubungi</li></a>
+  <a href=""><li class="list-group-item">Peta</li></a>
+</ul>
   </div>
 </div>
 
@@ -54,9 +55,9 @@ a {
     </div>
   </nav>
 
-<div class="list-group">
+<div class="list-group m-3">
 
-<h3>Produk</h3><br/>
+<h6>Produk</h6><br/>
   <a href="#" class="list-group-item list-group-item-action disabled" aria-current="true">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">Ikan Mas</h5>
