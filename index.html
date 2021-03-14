@@ -12,20 +12,44 @@
     <title>Toko Acim</title>
 <style>
 .container {
-  margin-top: 38px;
+  margin-top: 15px;
   margin-bottom: 50px;
+}
+.bg-transparent {
+  margin: 0;
+ background: none;
+ margin-bottom: 20px
+}
+.bi-list {
+ cursor: pointer;
+}
+.bg-black {
+ background: #000000! important;
 }
 </style>
   </head>
   
   <body>  
+
+<div class="collapse" id="navbarToggleExternalContent">
+  <div class="bg-dark bg-black p-4">
+    <h5 class="text-white h4">Collapsed content</h5>
+    <span class="text-muted">Toggleable via the navbar brand.</span>
+  </div>
+</div>
+
 <div class="container">
-<div class="text-center">
- <h1>Toko Acim</h1>
-<br/></br/> 
-</div> 
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light text-center bg-transparent">
+    <div class="container-fluid">
+      <h1>Toko Acim</h1>
+      <i class="bi-list" style="font-size: 2rem; color: cornflowerblack;" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"></i>
+    </div>
+  </nav>
+
 <div class="list-group">
 
+<h3>Produk</h3><br/>
   <a href="#" class="list-group-item list-group-item-action disabled" aria-current="true">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">Ikan Mas</h5>
@@ -65,7 +89,8 @@
 <button type="button" class="btn btn-outline-dark"><i class="bi-telephone"></i> Telepon</button>
 <br/><br/>
 <p><i class="bi-geo-alt"></i> Jl. SMP Mabad Gg. Gunung Sewu No. 212B</p>
- <p><small><b>Toko Acim - IUMK/NIB Nomor 1222000300429</b></small></p>
+  <h6><b>Toko Acim</b></h6>
+  <p><small><b>Izin IUMK/NIB Nomor 1222000300429</b></small></p>
 </div>
 
 </div>
