@@ -43,14 +43,20 @@
 
 			<div class="w3-container w3-center" id="signout-container" >
 <img width="48" src="https://tokoacim.github.io/assets/default-user.png" alt="Norway" id="loggedUserImage">
-<ul class="list-group list-group-horizontal">
-  <li class="list-group-item">Nama</li>
-  <li class="list-group-item"><span id="loggedUsername">UserName</span></li>
-</ul>		
-<ul class="list-group list-group-horizontal">
-  <li class="list-group-item">Email</li>
-  <li class="list-group-item"><span id="loggedUserEmail">EMail</span></li>
-</ul>	
+<br/>
+<table class="table table-borderless">
+  <tbody>
+    <tr>
+      <th scope="row">Nama</th>
+      <td><span id="loggedUsername">UserName</span></td>
+    </tr>
+    <tr>
+      <th scope="row">Email</th>
+      <td><span id="loggedUserEmail">EMail</span></td>
+    </tr>
+  </tbody>
+</table>
+<br/><br/>
 <button type="button" class="btn btn-warning" onclick="signOut();">Logout/Keluar</button>
 			</div>
 	
