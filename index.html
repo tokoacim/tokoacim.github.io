@@ -1,17 +1,14 @@
 <!doctype html>
 <html lang="en" class="bg-light">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="eTWG5TGqLMFMiR6Mjl6uyacCsZ_rsVBrwpuud5ae1UM" />
     <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="337346569150-q4dpu3dstb72fh5blqntpfh1nd0dsen6.apps.googleusercontent.com">
     <meta name="google-signin-client_id" content="337346569150-9697fifucfp7khg8bd38qplqptrp91ab.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/main.js"></script>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/style.css">
@@ -46,7 +43,7 @@
   </nav>
 
 <div class="list-group m-3">
-  
+
 <h6>Produk</h6><br/>
   <a href="#" class="list-group-item list-group-item-action disabled" aria-current="true">
     <div class="d-flex w-100 justify-content-between">
@@ -56,13 +53,14 @@
     <small class="text-danger">Stok Kosong</small>
   </a>
 
-  <a href="/produk/lele" class="list-group-item list-group-item-action">
+  <a data-bs-toggle="modal" data-bs-target="#ikanlele" class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">Ikan Lele</h5>
     </div>
     <p class="mb-1">Harga Mulai Rp. 20.000 per kg</p>
     <small class="text-success">Stok Tersedia</small>
   </a>
+
   <a href="#" class="list-group-item list-group-item-action disabled">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">Ikan Mujair</h5>
@@ -70,6 +68,7 @@
     <p class="mb-1">Ikan mujair per kilo mulai dari Rp. 30.000</p>
     <small class="text-danger">Stok Kosong</small>
   </a>
+
   <a href="#" class="list-group-item list-group-item-action disabled">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">Ikan Gabus</h5>
@@ -77,6 +76,7 @@
     <p class="mb-1">Harga ikan gabus mulai dari Rp. 90.000 per kg.</p>
     <small class="text-danger">Stok kosong</small>
   </a>
+
 </div>
 
 </div>
@@ -89,15 +89,27 @@
 
 </div>
     
-    <!-- Optional JavaScript; choose one of the two! -->
+<div class="modal fade" id="ikanlele" tabindex="-1" aria-labelledby="ikanleleLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title h4" id="ikanleleLabel">Ikan Lele</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h4>Khasiat Ikan Lele</h4>
+        <p>Khasiat ikan lele yaitu dapat mencerdaskan otak, meningkatkan kekuatan dan daya tahan tubuh, mencegah anemia, menyehatkan tulang dan gigi, menyehatkan jantung dan melindungi sistem saraf.</p>
+        <p><a href="https://www.alodokter.com/daftar-manfaat-ikan-lele-bagi-kesehatan-anak" target="_blank">Baca selengkapnya <i class="bi-box-arrow-up-right"></i></a></p>
+        <p><a href="/pages/bantuan">Cara pesan/Beli</a></p>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Pesan sekarang</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
