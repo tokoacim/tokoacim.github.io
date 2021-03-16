@@ -1,70 +1,85 @@
-
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-light">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
+    <meta name="google-site-verification" content="eTWG5TGqLMFMiR6Mjl6uyacCsZ_rsVBrwpuud5ae1UM" />
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="337346569150-9697fifucfp7khg8bd38qplqptrp91ab.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../assets/main.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../assets/style.css">
-    <title>Toko Acim | Ikan Lele</title>
+    <title>Toko Ikan Acim | Ikan Lele</title>
+    <meta name="description" content="Menjual ikan air tawar segar dan hidup untuk konsumsi seperti ikan mas, lele, dan ikan lainnya diantar langsung dengan metode pembayaran ditempat (COD).">
+    <meta name="keywords" content="Fish, Ikan, Ikan Mas, Ikan Lele, Toko, Online, Store, Ciputat, Tangsel, Indonesia, Food, COD">
   </head>
-  
-  <body>  
+  <body class="bg-light">  
 
-<div class="collapse collapsed" id="navbarToggleExternalContent">
+<div class="collapse bg-light collapsed" id="navbarToggleExternalContent">
   <div class="bg-light p-4">
-<ul class="list-group list-group-flush bg-dark">
-<ul class="list-group list-group-flush bg-dark">
-  <a href="/pages/tentang"><li class="list-group-item">Tentang</li></a>
-  <a href="/pages/bantuan"><li class="list-group-item">Cara Belanja</li></a>
-  <a href="/pages/kontak"><li class="list-group-item">Hubungi</li></a>
-</ul>
-</ul>
+<ul class="list-group list-group-flush bg-light">
+  <a href="../../pages/tentang"><li class="list-group-item">Tentang</li></a>
+  <a href="../../pages/bantuan"><li class="list-group-item">Cara Belanja</li></a>
+  <a href="../../pages/kontak"><li class="list-group-item">Hubungi</li></a>
+  <li class="list-group-item disabled">Aplikasi</li><br/>
+  <div class="bg-light" id="signin-container"><div class="g-signin2" data-onsuccess="onSignIn"></div></div>
+  <br/>
+  <div class="bg-light" id="signout-container">
+    <a href="/user"><li class="list-group-item"><i class="bi-person" style="color: cornflowerblack;"></i> <span id="loggedUsername">UserName</span></li></a>
+    <a href="#" onclick="signOut();"><li class="list-group-item"><i class="bi-box-arrow-in-right" style="color: cornflowerblack;"></i> Keluar</li></a>
+  </div>
+ </ul>
   </div>
 </div>
 
-<div class="container">
+<div class="container bg-light">
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light text-center bg-transparent">
     <div class="container-fluid">
       <a href="/"><i class="bi-arrow-left-square" style="font-size: 2rem; color: cornflowerblack;"></i></a>
-      <i class="bi-list" style="font-size: 2rem; color: cornflowerblack;" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"></i>
+      <i class="bi bi-text-paragraph" style="font-size: 2rem; color: cornflowerblack;" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"></i>
     </div>
   </nav>
-<br/>
-<div class="list-group m-3">
-<h1>Ikan Lele</h1>
-<h4>Rp. 20.000 / Kg</h4>
-<br/>
-<h6>Khasiat Ikan Lele</h6>
-<p>Khasiat ikan lele yaitu dapat mencerdaskan otak, meningkatkan kekuatan dan daya tahan tubuh, mencegah anemia, menyehatkan tulang dan gigi, menyehatkan jantung dan melindungi sistem saraf. 
-  <br/><a href="https://www.alodokter.com/daftar-manfaat-ikan-lele-bagi-kesehatan-anak">Baca selengkapnya <i class="bi-box-arrow-up-right"></i></a></p>
 
+<h3 class="m-2">Ikan Lele</h3>
+<h4 class="m-2 text-danger">Rp. 20.000 / Kg</h4><br/>
 
-<div class="container">
-<div class="container text-center">
-<h4>Pesan dan hubungi kami di:</h4>
-<br/>
-<button type="button" class="btn btn-outline-dark"><i class="bi-whatsapp"></i> WhatsApp</button>
-<button type="button" class="btn btn-outline-dark"><i class="bi-phone"></i> Ponsel</button>
-<button type="button" class="btn btn-outline-dark"><i class="bi-telephone"></i> Telepon</button>
-<br/><br/>
-<a href="/pages/bantuan" class="btn btn-link">Cara pesan/Beli</a>
-</div>
+<div class="card m-2 rounded-3">
+  <div class="card-body">
+    <p>Khasiat ikan lele yaitu dapat mencerdaskan otak, meningkatkan kekuatan dan daya tahan tubuh, mencegah anemia, menyehatkan tulang dan gigi, menyehatkan jantung dan melindungi sistem saraf. <a class="text-primary" href="https://www.alodokter.com/daftar-manfaat-ikan-lele-bagi-kesehatan-anak">Baca selengkapnya <i class="bi-box-arrow-up-right"></i></a></p>
+   <a href="/pages/bantuan" class="card-link text-primary">Cara order</a>
+  </div>
 </div>
 
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+</div>
+    
+    <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    -->
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAf2AVwFsCpAwTyOoNj5nKYVQHUujpfG9o",
+    authDomain: "tokoacim.firebaseapp.com",
+    projectId: "tokoacim",
+    storageBucket: "tokoacim.appspot.com",
+    messagingSenderId: "337346569150",
+    appId: "1:337346569150:web:b45bd3e8abbd22e8a40fef",
+    measurementId: "G-JQKR1Z0TRR"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   </body>
 </html>
