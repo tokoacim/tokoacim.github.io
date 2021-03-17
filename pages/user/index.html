@@ -35,38 +35,57 @@
   </div>
 </div>
 
-<div class="container bg-light">
+<div class="container bg-light"><!-- Container -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light text-center bg-transparent">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light text-center bg-transparent"><!-- Nav -->
     <div class="container-fluid">
       <a href="/"><i class="bi-arrow-left-square" style="font-size: 2rem; color: cornflowerblack;"></i></a>
       <i class="bi bi-text-paragraph" style="font-size: 2rem; color: cornflowerblack;" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"></i>
     </div>
-  </nav>
+  </nav><!-- /Nav -->
 
-<div class="card m-2 rounded-3">
+
+<div class="card m-2 rounded-3"><!-- Content -->
+
   <div class="card-body" id="signin-container">
     <h3 class="m-2">Masuk / Registrasi</h3>
     <div class="g-signin2" data-onsuccess="onSignIn"></div><br/>
   </div>
-  <div class="card-body" id="signout-container">
+
+  <div class="row"><!-- Row -->
+    <div class="col-sm"><!-- Col 1 -->
     <h3 class="m-2">Akun saya</h3>
-<div class="card">
-  <img src="https://tokoacim.github.io/assets/default-user.png" class="card-img-top" alt="User" id="loggedUserImage">
-  <div class="card-body">
-    <h5 class="card-title" id="loggedUsername">UserName</h5>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item" id="loggedUsername">UserName</li>
-    <li class="list-group-item" id="loggedUserEmail">EMail</li>
-    <li class="list-group-item" onclick="signOut();">Keluar</li>
-  </ul>
-</div>
+  <div class="card-body" id="signout-container"><!-- CardBody 1 -->
+    <div class="card"><!-- Card -->
+     <img src="https://tokoacim.github.io/assets/default-user.png" class="card-img-top" alt="User" id="loggedUserImage">
+     <div class="card-body"><!-- CardBody 2 -->
+      <h5 class="card-title" id="loggedUsername">UserName</h5>
+     </div><!-- /CardBody 2 -->
+     <ul class="list-group list-group-flush">
+      <li class="list-group-item" id="loggedUsername">UserName</li>
+      <li class="list-group-item" id="loggedUserEmail">EMail</li>
+      <li class="list-group-item" onclick="signOut();">Keluar</li>
+     </ul>
+    </div><!-- /Card -->
+  </div><!-- /CardBody 1 -->
+    </div><!-- /Col 1 -->
 
-  </div>
-</div>
+    <div class="col-sm"><!-- Col 2 -->
+    <h3 class="m-2">Untuk pemesanan hubungi</h3>
+     <div class="card">
+      <ul class="list-group list-group-flush">
+       <li class="list-group-item"><i class="bi-telephone"></i> 021-747-81916</li>
+       <li class="list-group-item"><i class="bi-whatsapp"></i> 0851-5894-4110</li>
+       <li class="list-group-item">tokoacim@outlook.co.id</li>
+       <li class="list-group-item"><i class="bi-geo-alt"></i> Jl. SMP Mabad Gg. Damai No. 212B</li>
+      </ul>
+     </div>
+    </div><!-- Col 2 -->
+  </div><!-- /Row -->
 
-</div>
+
+</div><!-- /Content -->
+</div><!-- /Container -->
     
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
