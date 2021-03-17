@@ -51,22 +51,18 @@
   </div>
   <div class="card-body" id="signout-container">
     <h3 class="m-2">Akun saya</h3>
-<img width="48" src="https://tokoacim.github.io/assets/default-user.png" alt="Norway" id="loggedUserImage">
-<br/>
-<table class="table table-borderless">
-  <tbody>
-    <tr>
-      <th scope="row">Nama</th>
-      <td><span id="loggedUsername">UserName</span></td>
-    </tr>
-    <tr>
-      <th scope="row">Email</th>
-      <td><span id="loggedUserEmail">EMail</span></td>
-    </tr>
-  </tbody>
-</table>
-<br/><br/>
-<button type="button" class="btn btn-warning" onclick="signOut();">Logout/Keluar</button>
+<div class="card">
+  <img src="https://tokoacim.github.io/assets/default-user.png" class="card-img-top" alt="User" id="loggedUserImage">
+  <div class="card-body">
+    <h5 class="card-title" id="loggedUsername">UserName</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" id="loggedUsername">UserName</li>
+    <li class="list-group-item" id="loggedUserEmail">EMail</li>
+    <li class="list-group-item" onclick="signOut();">Keluar</li>
+  </ul>
+</div>
+
   </div>
 </div>
 
